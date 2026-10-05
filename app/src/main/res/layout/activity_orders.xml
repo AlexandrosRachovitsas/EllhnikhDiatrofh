@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:text="Φόρμα Παραγγελιών"
+            android:textColor="@color/brand_blue_dark"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Πωλητής / Εταιρία"
+            android:textColor="@color/brand_blue_dark"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/sellerInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="π.χ. ΜΕΒΓΑΛ" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Υπεύθυνος παραγγελίας"
+            android:textColor="@color/brand_blue_dark"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/responsibleInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="π.χ. Μαίρη" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.62"
+                android:text="Περιγραφή προϊόντος"
+                android:textColor="@color/brand_blue_dark"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.38"
+                android:text="Ποσότ. (τεμ)"
+                android:textColor="@color/brand_blue_dark"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:background="@color/brand_blue_dark" />
+
+        <LinearLayout
+            android:id="@+id/rowsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <Button
+            android:id="@+id/addRowButton"
+            style="@style/AppButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Προσθήκη Γραμμής"
+            android:textColor="@color/brand_gold_light" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Παρατηρήσεις / σχόλια"
+            android:textColor="@color/brand_blue_dark"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/notesInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:hint="Προαιρετικό"
+            android:minLines="2" />
+
+        <Button
+            android:id="@+id/saveOrderButton"
+            style="@style/AppButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Αποθήκευση Παραγγελίας"
+            android:textColor="@color/brand_gold_light" />
+
+    </LinearLayout>
+
+</ScrollView>

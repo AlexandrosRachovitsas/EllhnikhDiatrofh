@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_bg_normal"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <LinearLayout
+            android:id="@+id/labelContainer"
+            android:layout_width="260dp"
+            android:layout_height="310dp"
+            android:background="@drawable/button_selector"
+            android:backgroundTint="@color/brand_gold_light"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/labelTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="center"
+                android:inputType="textCapCharacters"
+                android:letterSpacing="0.05"
+                android:paddingBottom="8dp"
+                android:text="SUPER TIMH"
+                android:textAllCaps="true"
+                android:textColor="#000000"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/labelDescription"
+                android:layout_width="match_parent"
+                android:layout_height="112dp"
+                android:background="@drawable/button_selector"
+                android:backgroundTint="@color/brand_gold_light"
+                android:gravity="center"
+                android:inputType="textCapCharacters"
+                android:paddingBottom="4dp"
+                android:text=""
+                android:textAllCaps="true"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/decreaseFontButton"
+                    style="@style/AppButton"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:minWidth="0dp"
+                    android:minHeight="0dp"
+                    android:padding="0dp"
+                    android:text="A-"
+                    android:textColor="@color/brand_gold_light"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/increaseFontButton"
+                    style="@style/AppButton"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginStart="6dp"
+                    android:minWidth="0dp"
+                    android:minHeight="0dp"
+                    android:padding="0dp"
+                    android:text="A+"
+                    android:textColor="@color/brand_gold_light"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:background="@color/brand_gold_light"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/brand_gold_light" />
+
+                <TextView
+                    android:id="@+id/labelUnit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="start"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/labelPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="—,—€"
+                android:textColor="#000000"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/kiloButton"
+                style="@style/AppButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ΤΟ ΚΙΛΟ"
+                android:textColor="@color/brand_gold_light" />
+
+            <Button
+                android:id="@+id/temaxioButton"
+                style="@style/AppButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/button_bg_normal"
+                android:text="ΤΟ ΤΕΜΑΧΙΟ"
+                android:textColor="@color/brand_gold_light" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/priceInput"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:hint="Τιμή (π.χ. 1.49)"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/setPriceButton"
+            style="@style/AppButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Ορισμός Τιμής"
+            android:textColor="@color/brand_gold_light" />
+
+        <Button
+            android:id="@+id/saveLabelButton"
+            style="@style/AppButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Αποθήκευση Ετικέτας"
+            android:textColor="@color/brand_gold_light" />
+
+    </LinearLayout>
+</ScrollView>

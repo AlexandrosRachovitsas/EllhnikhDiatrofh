@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/button_bg_normal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <Button
+            android:id="@+id/exportPdfButton"
+            style="@style/AppButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Αποθήκευση (PDF)"
+            android:textColor="@color/brand_gold_light" />
+
+        <Button
+            android:id="@+id/deleteAllButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/button_bg_delete"
+            android:text="Διαγραφή Όλων"
+            android:textAllCaps="false"
+            android:textColor="@color/brand_gold_light" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <GridLayout
+            android:id="@+id/labelsGrid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:padding="12dp" />
+
+    </ScrollView>
+
+</LinearLayout>

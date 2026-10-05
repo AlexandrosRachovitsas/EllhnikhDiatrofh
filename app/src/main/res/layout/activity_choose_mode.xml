@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/button_selector"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="32dp">
+
+    <ImageView
+        android:layout_width="220dp"
+        android:layout_height="140dp"
+        android:layout_marginBottom="48dp"
+        android:contentDescription="Ελληνική Διατροφή"
+        android:scaleType="fitCenter"
+        android:src="@drawable/app_logo" />
+
+    <Button
+        android:id="@+id/labelsModeButton"
+        style="@style/AppButton"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:text="Ετικέτες"
+        android:textColor="@color/brand_gold_light"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/ordersModeButton"
+        style="@style/AppButton"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Παραγγελίες"
+        android:textColor="@color/brand_gold_light"
+        android:textSize="18sp" />
+
+</LinearLayout>
